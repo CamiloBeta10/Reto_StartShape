@@ -12,6 +12,8 @@ public class CreacionReunioPage {
     public static final Target TIPO_REUNION_BOX = Target.the("ingresa tipo de reunion").locatedBy("//*[@id='StartSharp_Meeting_MeetingDialog14_PropertyGrid']/div/div/div[2]/a/b");
     public static final Target NAME_RUNION_BOX = Target.the("textbox nombre de tipo de reunion").locatedBy("//input[@name='Name']");
     public static final Target GUARDAR_REUNION_BUTTON = Target.the("boton guardar nuevo tipo de reunion").locatedBy("(//span[contains(text(),'Save')])[2]");
+    public static final Target ELIMINAR_BUTTON = Target.the("boton para eliminar").locatedBy("(//span[contains(text(),'Delete')])[2]");
+    public static final Target SI_BUTTON = Target.the("boton de caja de dialogo opcion si").locatedBy("//*[@id='s-Page']/div[11]/div[3]/div/button[1]");
     public static final Target NUMERO_REUNION_BOX = Target.the("ingresar cantida de personas en la reunion").locatedBy("//input[@name='MeetingNumber']");
     public static final Target ROLE_LOCATION_BUTTON = Target.the("role location button").locatedBy("//*[@id='StartSharp_Meeting_MeetingDialog14_PropertyGrid']/div/div/div[6]/a/b");
     public static final Target ROLE_UNIT_BUTTON = Target.the("role unit button").locatedBy("//*[@id='s2id_StartSharp_Meeting_MeetingDialog14_UnitId']/a/span[2]/b");

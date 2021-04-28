@@ -11,7 +11,7 @@ public class MyChromeDriver {
 
     public static MyChromeDriver web(){
         System.setProperty("webdriver.chrome.driver",
-                "src/test/resources/drivers/chromedriver.exe");
+                "src/test/resources/drivers/chromedriver");
 
         String  rutaDesrgaArchivoDefecto = "${user.dir}\\src\\test\\resources\\archivos";
         HashMap<String, Object> chromePreferencias = new HashMap<String, Object>();

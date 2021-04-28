@@ -29,7 +29,15 @@ public class Crear implements Task {
                 Click.on(REUNIONES_BUTTON),
                 Click.on(NUEVA_REUNION_BUTTON),
                 Enter.theValue(data.get(0).getReunion()).into(NOMBRE_REUNION_BOX),
-                Click.on(TIPO_REUNION_BOX),
+                Click.on(TIPO_REUNION_BOX));
+        if (ELIMINAR_BUTTON.resolveFor(actor).isVisible()){
+                actor.attemptsTo(
+                        Click.on(ELIMINAR_BUTTON),
+                        Click.on(SI_BUTTON),
+                        Click.on(TIPO_REUNION_BOX)
+                );
+        }
+        actor.attemptsTo(
                 Enter.theValue(data.get(0).getTipo()).into(NAME_RUNION_BOX),
                 Click.on(GUARDAR_REUNION_BUTTON),
                 Enter.theValue(data.get(0).getNumero()).into(NUMERO_REUNION_BOX),
