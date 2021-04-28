@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Creacion de una reunion de equipo" skipped="0" tests="1" time="38.86" timestamp="2021-04-27 08:51:20"><testcase name="creacion de unidad de negocio StartShape"><failure message="The following error occurred: Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled</failure><system-err>The following error occurred: Expected enabled element was not enabled
-co.com.prueba.certificacion.tasks.Crear.performAs(Crear.java:27)
-co.com.prueba.certificacion.stepdefinitions.unidadNegocioStepdefinition.creoUnaNuevaReunionEnStartShape(unidadNegocioStepdefinition.java:56)
-cucumber.runner.Runner.runPickle(Runner.java:80)
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Creacion de una reunion de equipo" skipped="0" tests="1" time="30.52" timestamp="2021-04-28 08:18:18"><testcase name="creacion de unidad de negocio StartShape"><failure message="Expected net.serenitybdd.screenplay.QuestionSubject@77b5892f&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">Expected net.serenitybdd.screenplay.QuestionSubject@77b5892f
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;</failure><system-err>Expected net.serenitybdd.screenplay.QuestionSubject@77b5892f
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+co.com.prueba.certificacion.stepdefinitions.unidadNegocioStepdefinition.visualizoLaUnidadDeNegocioCreada(unidadNegocioStepdefinition.java:51)
+✽.Visualizo la unidad de negocio creada(src/test/resources/features/startshape.feature:14)
 </system-err></testcase></testsuite>

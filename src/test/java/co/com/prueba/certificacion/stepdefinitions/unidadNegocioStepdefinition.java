@@ -1,6 +1,7 @@
 package co.com.prueba.certificacion.stepdefinitions;
 
 import co.com.prueba.certificacion.model.DatoPrueba;
+import co.com.prueba.certificacion.questions.Reunion;
 import co.com.prueba.certificacion.questions.UnidadDeNegocio;
 import co.com.prueba.certificacion.tasks.Autentica;
 import co.com.prueba.certificacion.tasks.Crear;
@@ -15,7 +16,6 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import java.util.List;
-import java.util.Map;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -59,7 +59,7 @@ public class unidadNegocioStepdefinition {
 
     @Entonces("^Visualizo la reunion creada$")
     public void visualizoLaReunionCreada() throws Exception {
-
+        theActorInTheSpotlight().should(seeThat(Reunion.creada()));
     }
 
 

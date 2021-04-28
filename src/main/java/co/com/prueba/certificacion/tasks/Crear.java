@@ -37,10 +37,23 @@ public class Crear implements Task {
                 Enter.theValue(data.get(0).getLocalizacion()).into(NAME_RUNION_BOX),
                 Click.on(GUARDAR_REUNION_BUTTON),
                 Click.on(ROLE_UNIT_BUTTON),
-                Click.on(SELECT_UNIT_LABEL)
-
+                Click.on(SELECT_UNIT_LABEL),
+                Click.on(ROLE_ORGANIZED_BUTTON),
+                Enter.theValue(data.get(0).getOrganizadorNombre()).into(FIRST_NAME_CONTAC_BOX),
+                Enter.theValue(data.get(0).getOrganizadorApellido()).into(LAST_NAME_CONTAC_BOX ),
+                Enter.theValue(data.get(0).getOrganizadorEmail()).into(EMAIL_CONTAC_BOX),
+                Click.on(GUARDAR_REUNION_BUTTON),
+                Click.on(ROLE_REPORTER_BUTTON),
+                Enter.theValue(data.get(0).getReportaNombre()).into(FIRST_NAME_CONTAC_BOX),
+                Enter.theValue(data.get(0).getReportaApellido()).into(LAST_NAME_CONTAC_BOX ),
+                Enter.theValue(data.get(0).getReportaEmail()).into(EMAIL_CONTAC_BOX),
+                Click.on(GUARDAR_REUNION_BUTTON),
+                Click.on(ROLE_LIST),
+                Click.on(SELECT_LIST_LABEL),
+                Click.on(SAVE_BUTTON)
 
         );
+        actor.remember("reunion" ,data.get(0).getReunion());
 
 
     }
