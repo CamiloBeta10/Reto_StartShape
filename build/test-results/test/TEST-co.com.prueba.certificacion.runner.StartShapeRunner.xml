@@ -2,21 +2,9 @@
 <testsuite name="co.com.prueba.certificacion.runner.StartShapeRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="MacBook-Pro-de-SBMEDADMIN.local" time="0.0">
   <properties/>
   <system-out><![CDATA[
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/startshape.feature:23 ?[0m# creacion de unidad de negocio StartShape
-
-1 Scenarios (?[31m1 failed?[0m)
-6 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m, ?[32m3 passed?[0m)
-0m30,628s
-
-java.lang.AssertionError: Expected net.serenitybdd.screenplay.QuestionSubject@77b5892f
-Expected: is <true>
-     but: was <false>
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
-	at co.com.prueba.certificacion.stepdefinitions.unidadNegocioStepdefinition.visualizoLaUnidadDeNegocioCreada(unidadNegocioStepdefinition.java:51)
-	at ✽.Visualizo la unidad de negocio creada(src/test/resources/features/startshape.feature:14)
+1 Scenarios (?[32m1 passed?[0m)
+6 Steps (?[32m6 passed?[0m)
+0m41,953s
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.serenitybdd.core.Serenity - ?[36m
@@ -47,17 +35,15 @@ Expected: is <true>
 
 TEST STARTED: creacion de unidad de negocio StartShape
 -------------------------------------------------------------------(creacion-de-una-reunion-de-equipo;creacion-de-unidad-de-negocio-startshape)
-[Test worker] ERROR net.serenitybdd.core.Serenity - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
+[Test worker] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
-TEST FAILED: creacion de unidad de negocio StartShape
---------------------------------------------------------------------------
-[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Then unidad de negocio
-[Test worker] ERROR net.serenitybdd.core.Serenity - Expected net.serenitybdd.screenplay.QuestionSubject@77b5892fExpected: is <true> but: was <false>
+TEST PASSED: creacion de unidad de negocio StartShape
+----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

@@ -1,39 +1,42 @@
-plugins {
-    id 'java'
-}
-
-group 'co.com.reto'
+group 'co.com.prueba.certificacion.startshape'
 version '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+    mavenLocal()
+    jcenter()
 }
 
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.9")
+    }
+}
 
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+sourceCompatibility = 1.8
 
 dependencies {
-    implementation 'org.testng:testng:7.1.0'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testImplementation 'org.slf4j:slf4j-simple:1.7.7'
-    implementation group: 'com.codoid.products', name: 'fillo', version: '1.18'
-    implementation group: 'net.serenity-bdd', name: 'serenity-gradle-plugin', version: '1.8.8'
-
-
-
-    compile 'junit:junit:4.12'
-    compile 'org.assertj:assertj-core:1.7.0'
-    compile'org.slf4j:slf4j-simple:1.7.7'
-
-
     compile 'net.serenity-bdd:serenity-core:1.9.9'
     compile 'net.serenity-bdd:serenity-junit:1.9.9'
-    compile 'net.serenity-bdd:serenity-cucumber:1.9.4'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.5'
     compile 'net.serenity-bdd:serenity-screenplay:1.9.9'
     compile 'net.serenity-bdd:serenity-screenplay-webdriver:1.9.9'
-    compile 'net.serenity-bdd:serenity-gradle-plugin:2.0.52'
 
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.assertj:assertj-core:3.9.1'
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'
 }
 
 gradle.startParameter.continueOnFailure = true
-
-

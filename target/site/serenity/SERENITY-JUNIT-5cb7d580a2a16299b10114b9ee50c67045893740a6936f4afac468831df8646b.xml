@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Creacion de una reunion de equipo" skipped="0" tests="1" time="1.3" timestamp="2021-04-28 10:48:15"><testcase name="creacion de unidad de negocio StartShape"><error message="com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;" type="java.lang.NoSuchMethodError">com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;</error><system-err>com.google.common.collect.ImmutableList.toImmutableList()Ljava/util/stream/Collector;
+co.com.prueba.certificacion.utils.drivers.MyChromeDriver.web(MyChromeDriver.java:25)
+co.com.prueba.certificacion.stepdefinitions.unidadNegocioStepdefinition.yoComoUsuarioDelPortalWebDeStartShape(unidadNegocioStepdefinition.java:32)
+✽.Yo como usuario del portal web de StartShape(src/test/resources/features/startshape.feature:7)
+</system-err></testcase></testsuite>
