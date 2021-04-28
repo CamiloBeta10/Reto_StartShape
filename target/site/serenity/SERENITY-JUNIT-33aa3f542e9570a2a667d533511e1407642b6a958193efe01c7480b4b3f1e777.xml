@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Creacion de una reunion de equipo" skipped="0" tests="1" time="12.09" timestamp="2021-04-27 12:47:14"><testcase name=": creacion de unidad de negocio StartShape"><error type="java.lang.NullPointerException"/><system-err>null
+co.com.prueba.certificacion.interaction.Ingresar.performAs(Ingresar.java:18)
+co.com.prueba.certificacion.tasks.Autentica.performAs(Autentica.java:18)
+co.com.prueba.certificacion.stepdefinitions.unidadNegocioStepdefinition.ingresoCredencialeParaLaAutenticacion(unidadNegocioStepdefinition.java:34)
+cucumber.runner.Runner.runPickle(Runner.java:80)
+</system-err></testcase></testsuite>
